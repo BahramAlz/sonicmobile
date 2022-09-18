@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Default Template -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonic The Hedgehog Fan Page</title>
+
+    <!-- Fontstyle -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>  
+  <!-- Header Title -->
+    <Header>
+      <div class="site-header-container">
+        <div class="navbar">
+          <nav>
+              <ul id="menuList">
+                  <li>
+                      <a href="index.html">Home</a> 
+                      <a href="index.html">About</a> 
+                      <a href="index.html">Content</a>
+                      <a href="index.html">Contact</a>
+                  </li>
+              </ul>
+          </nav>
+          <img src="images/menuicon.webp" class="menu-icon" onclick="togglemenu()">
+            <script>
+                var menuList = document.getElementById("menuList");
+                menuList.style.maxHeight = "0px";
+                function togglemenu(){
+                    if(menuList.style.maxHeight == "0px")
+                        {
+                            menuList.style.maxHeight = "35px"
+                        }
+                    else
+                        {
+                            menuList.style.maxHeight = "0px"
+                        }
+                }
+            </script>
+        
+      </div>
+    </Header>
+
+<main>
+  <div class="container">
+    <div class="site-header-title">
+      <h2>Welcome To</h2>
+      <h1>Sonic The Hedgehog</h1>
+      <h2>Fan Page</h2>
+    </div>
+
+    <!-- About Us -->
+    <div class="about-container">
+      <div class="about">
+        <h2>About Us</h2>
+        <img src="images/sonicthums.gif" alt="sonic thumbs up">
+      </div>
+      <div class="about-left">
+        <h3> Our History</h3>
+        <p> 
+          The Page was made on the 16th of September 2022 by Bahram Al-Zuhairi, a front-end developer under construction.
+          
+        </p>
+      </div>
+      <div class="about-right">
+        <h3>Vision & Mission</h3>
+        <p>
+          Our Mission is to bring back some of the old Sonic fan pages content while keeping it a bit modern.
+          Hopefully it will reach the rightful audience and bring joy to all
+        </p>
+      </div>
+      
+
+      <!-- Process -->
+      <div class="process-container">
+        <div class="process">
+          <h3>Our Process</h3>
+        </div>
+        <div class="process1">
+          <h4>One</h4>
+          <p> 
+            We first find lost content
+          </p>
+        </div>
+        <div class="process2">
+          <h4>Two</h4>
+          <p>
+            We then break down the lost content and make it usable
+          </p>
+        </div>
+        <div class="process3">
+          <h4>Three</h4>
+          <p>
+            Provide the lost content on our fan page
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="content-container">
+        <div class="content">
+          <h2>Content</h2>
+        </div>
+        <div class="content1">
+          <h3>Game Storyline</h3>
+          <p> 
+            Players control Sonic the Hedgehog, who can run at supersonic speeds; Sonic sets out on a quest to defeat Dr. Robotnik, 
+            a scientist who has imprisoned animals in robots and seeks the powerful Chaos Emeralds.
+          </p>
+        </div>
+        <div class="content2">
+          <h3>Gameplay</h3>
+          <p>
+            Collecting rings as a form of health<br>
+            Jumping and attacking controlled by a single button<br>
+          </p>
+          <video controls loop>
+            <source src="images/sonicanimation.mp4" type="video/mp4">
+            <source src="images/sonicanimation.mp4" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+        </div>
+      
+
+      <!-- Characters -->
+      <div class="characters">
+        <h3>Characters</h3>
+      </div>
+      <div class="sonic">
+        <img src="images/sonicwaiting.gif" alt="sonic waiting">
+        <h3>Sonic</h3>
+        <p>Protagonist</p>
+        <p>Brave</p>
+        <p>World's Fastest Hedgehog</p>
+      </div>
+
+      <div class="versus">
+        <img src="images/vs.png" class="versus-img">
+      </div>
+
+      <div class="eggman">
+        <img src="images/dreggman.gif" alt="dr eggman">
+        <h3>Dr. Eggman</h3>
+        <p>Antagonist</p>
+        <p>Controls Robots</p>
+        <p>IQ: 300</p>
+      </div>
+    
+
+    <!-- Soundtracks -->
+    <div class="soundtrack-title">
+      <h2>Soundtracks</h2>
+  </div>
+  <div class="soundtrack">
+      <div class="soundtrack1">
+        <h3>Opening Theme Song</h3>
+        <audio src="images/sonic1intro.mp3" controls></audio>
+      </div>
+      <div class="soundtrack2">
+        <h3>Green Hill Zone</h3>
+        <audio src="images/greenhill.mp3" controls></audio>
+      </div>
+      <div class="soundtrack3">
+        <h3>Marble Zone</h3>
+        <audio src="images/marblezone.mp3" controls></audio>
+      </div>
+      <div class="soundtrack4">
+        <h3>Spring Yard Zone</h3>
+        <audio src="images/springyard.mp3" controls></audio>
+      </div>
+      <div class="soundtrack5">
+        <h3>Labyrinth Zone</h3>
+        <audio src="images/labyrinthzone.mp3" controls></audio>
+      </div>
+      <div class="soundtrack6">
+        <h3>Star Light Zone</h3>
+        <audio src="images/starlightzone.mp3" controls></audio>
+      </div>
+      <div class="soundtrack7">
+        <h3>Scrap Brain Zone</h3>
+        <audio src="images/scrapbrainzone.mp3" controls></audio>
+      </div>
+      <div class="soundtrack8">
+        <h3>Final Zone</h3>
+        <audio src="images/finalzone.mp3" controls></audio>
+      </div>
+      <div class="soundtrack9">
+        <h3>Boss Theme</h3>
+        <audio src="images/bosstheme.mp3" controls></audio>
+      </div>
+      <div class="soundtrack10">
+        <h3>Special Stage</h3>
+        <audio src="images/specialstage.mp3" controls></audio>
+      </div>
+      <div class="soundtrack11">
+        <h3>Staff Roll</h3>
+        <audio src="images/staffroll.mp3" controls></audio>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+    <!-- Contact -->
+  <div class="contact-container">
+    <div class="contact">
+      <h2>Contact Us</h2>
+    </div>
+    <div class="contact-form">
+      <form>
+        <input type="text" placeholder="Enter your name">
+        <input type="email" placeholder="Enter your email">
+        <textarea>Enter your message</textarea>
+        <input type="submit" value="Send">
+    </form>
+    </div>
+  </div>
+</main>
+
+<!-- Footer -->
+    <footer class="site-footer">
+      <div class="text-position1">
+        <p>Make sure to register for exclusive content!</p>
+      </div>
+            <form>
+                
+                <label for="email">Email</label>
+                <input name="email" id="email" type="text">
+                <button><a href="index.html">SUBMIT</a></button>
+            </form><br>
+        <div class="text-position2">
+          <p>Made By Bahram Al-Zuhairi</p>
+          <p>FED24STO</p>
+        </div>
+      </footer>
+</body>
+</html>
