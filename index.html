@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
 
+    
     <!-- CSS Link -->
     <link rel="stylesheet" href="styles.css">
 
@@ -32,21 +33,6 @@
               </ul>
           </nav>
           <img src="images/menuicon.webp" class="menu-icon" onclick="togglemenu()">
-            <script>
-                var menuList = document.getElementById("menuList");
-                menuList.style.maxHeight = "0px";
-                function togglemenu(){
-                    if(menuList.style.maxHeight == "0px")
-                        {
-                            menuList.style.maxHeight = "35px"
-                        }
-                    else
-                        {
-                            menuList.style.maxHeight = "0px"
-                        }
-                }
-            </script>
-        
       </div>
     </Header>
 
@@ -68,7 +54,6 @@
         <h3> Our History</h3>
         <p> 
           The Page was made on the 16th of September 2022 by Bahram Al-Zuhairi, a front-end developer under construction.
-          
         </p>
       </div>
       <div class="about-right">
@@ -242,5 +227,8 @@
           <p>FED24STO</p>
         </div>
       </footer>
+
+      <!-- JS -->
+      <script src="script.js"></script>
 </body>
 </html>

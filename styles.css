@@ -97,7 +97,6 @@ nav ul li a {
   text-align: center;
   flex-wrap: wrap;
   background-color: silver;
- 
 }
 
 .about {
@@ -113,6 +112,7 @@ nav ul li a {
 
 .about-left {
   width: 100%;
+  
 }
 
 .about-right {
@@ -121,10 +121,11 @@ nav ul li a {
 
 .about-left,
 .about-right {
-    padding: 0.5rem 1rem;
+  padding: 0.5rem 1rem;
+  align-self: center;
 }
 
-.process-container{
+.process-container {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -142,9 +143,7 @@ nav ul li a {
 .process3 {
   width: 100%;
   padding: 0.5rem;
-  
 }
-
 
 .content-container {
   display: flex;
@@ -194,6 +193,7 @@ nav ul li a {
   width: 100%;
   height: auto;
   max-width: 100px;
+  display: none;
 }
 
 .eggman {
@@ -208,7 +208,7 @@ nav ul li a {
 
 .sonic,
 .versus,
-.eggman{
+.eggman {
   padding: 0.5rem;
 }
 
@@ -222,7 +222,6 @@ nav ul li a {
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
-
 }
 
 .soundtrack1,
@@ -239,13 +238,13 @@ nav ul li a {
   width: 100%;
 }
 
-.contact-container{
-    display:flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: center;
-    padding: 1rem 0;
-    background-color: silver;
+.contact-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 1rem 0;
+  background-color: silver;
 }
 
 .contact {
@@ -253,19 +252,17 @@ nav ul li a {
   padding: 1rem 0;
 }
 
-.contact-form{
+.contact-form {
   width: 100%;
   padding: 0 2rem;
-  
 }
 
-.contact-form form input{
-    width: 100%;
-    padding: 0.3rem 0;
-   
+.contact-form form input {
+  width: 100%;
+  padding: 0.3rem 0;
 }
 
-.contact-form textarea{
+.contact-form textarea {
   width: 100%;
   min-height: 10vh;
 }
@@ -279,99 +276,121 @@ nav ul li a {
   padding: 1rem 1rem;
 }
 
-.text-position1{
+.text-position1 {
   width: 100%;
 }
 
-.text-position2{
+.text-position2 {
   width: 100%;
 }
 
-.site-footer form{
+.site-footer form {
   width: 100%;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    body{
-        margin: 1rem;
-    }
-      
-    #menuList {
-      overflow: visible;
-    }
-
-   
-
-    .menu-icon {
-      display: none;
-    }
-    
-    .about-left,
-    .about-right{
-      flex: 1 ;
-    }
-
-    .process1,
-    .process2,
-    .process3 {
-      flex:1;
-    }
-
-    .content1{
-      width: 50%;
-    }
-    .content2 {
-      width: 50%;
-    }
-
-    .sonic{
-      width: 40%;
-    }
-  
-    .versus{
-      width: 20%;
-      align-self: center;
-    }
-  
-    .versus img{
-      max-width: 200px;
-    }
-  
-    .eggman{
-      width: 40%;
-    }
-
-    .soundtrack1,
-    .soundtrack2,
-    .soundtrack3,
-    .soundtrack4,
-    .soundtrack5,
-    .soundtrack6,
-    .soundtrack7,
-    .soundtrack8,
-    .soundtrack9,
-    .soundtrack10{
-      width: 50%;
-    }
-
-    .contact-form{
-      max-width: 50rem;
-      justify-content: center;
+  body {
+    margin: 1rem;
   }
 
+  #menuList {
+    overflow: visible;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .about-container{
+    padding: 2rem 0;
+  }
+
+  .about-left{
+    width: 30%;
     
+  }
+  .about-right{
+    width: 30%;
+  }
+
+  .about{
+    width: 40%;
+    
+  }
+
+  .about img{
+    max-width: 200px;
+  }
+
+  .process-container{
+    padding: 2rem 1rem;
+  }
+
+  .process{
+    padding: 2rem 0;
+  }
+
+  .process1,
+  .process2,
+  .process3 {
+    flex: 1;
+    padding: 0 1rem;
+  }
+
+  .content1 {
+    width: 50%;
+    
+  }
+  .content2 {
+    width: 50%;
+  }
+
+  .sonic {
+    width: 40%;
+  }
+
+  .versus {
+    width: 20%;
+    align-self: center;
+  }
+
+  .versus img {
+    max-width: 200px;
+    display: block;
+  }
+
+  .eggman {
+    width: 40%;
+  }
+
+  .soundtrack1,
+  .soundtrack2,
+  .soundtrack3,
+  .soundtrack4,
+  .soundtrack5,
+  .soundtrack6,
+  .soundtrack7,
+  .soundtrack8,
+  .soundtrack9,
+  .soundtrack10 {
+    width: 50%;
+  }
+
+  .contact-form {
+    max-width: 50rem;
+    justify-content: center;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-
-  body{
+  body {
     margin: 3rem;
     background-color: blue;
   }
 
-  nav ul{
+  nav ul {
     top: 14rem;
   }
 
@@ -389,25 +408,39 @@ nav ul li a {
   .soundtrack8,
   .soundtrack9,
   .soundtrack10,
-  .soundtrack11{
-      width: 33%;
-    }
+  .soundtrack11 {
+    width: 33%;
+  }
 
-  .sonic{
+  .about img{
+    max-width: 200px;
+  }
+
+  .sonic {
     width: 40%;
   }
 
-  .versus{
+  .versus {
     width: 20%;
     align-self: center;
   }
 
-  .versus img{
+  .versus img {
     max-width: 200px;
   }
 
-  .eggman{
+  .eggman {
     width: 40%;
   }
 
+  .contact-form {
+    max-width: 50%;
+
+    justify-content: center;
+  }
+
+  .contact-form textarea {
+    width: 100%;
+    min-height: 30vh;
+  }
 }
