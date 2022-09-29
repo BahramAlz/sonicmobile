@@ -1,12 +1,7 @@
-var menuList = document.getElementById("menuList");
-        menuList.style.maxHeight = "0px";
-        function togglemenu(){
-            if(menuList.style.maxHeight == "0px")
-                {
-                    menuList.style.maxHeight = "35px"
-                }
-            else
-                {
-                    menuList.style.maxHeight = "0px"
-                }
-        }
+function toggleNav() {
+  let menuList = document.getElementById("menuList");
+  menuList.classList.toggle("menulist--active");
+}
+
+let img = document.getElementById("menuToggle");
+img.addEventListener("click", toggleNav);

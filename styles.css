@@ -7,6 +7,7 @@
 html {
   font-size: 16px;
   font-family: "Silkscreen", cursive;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -36,9 +37,12 @@ header {
   max-width: 20px;
 }
 
-#menuList {
-  overflow: hidden;
-  transition: 0.5s;
+.menulist {
+  display: none;
+}
+
+.menulist--active {
+  display: block;
 }
 
 nav ul {
@@ -61,14 +65,20 @@ nav ul li a {
 }
 
 .site-header-title {
-  background-image: url(images/sonicbgimg2.gif);
+  background-image: url(images/sonicbgimage.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   color: blue;
   width: 100%;
-  padding: 4rem 0rem;
+  padding: 4rem 1rem;
   border-style: inset;
+  animation: blinking 1s infinite;
+}
+
+.site-header-title h1,
+.site-header-title h2 {
+  animation: tada 1s;
 }
 
 .main {
@@ -99,6 +109,10 @@ nav ul li a {
   background-color: silver;
 }
 
+.about-title {
+  width: 100%;
+}
+
 .about {
   width: 100%;
   padding: 0.5rem;
@@ -112,7 +126,6 @@ nav ul li a {
 
 .about-left {
   width: 100%;
-  
 }
 
 .about-right {
@@ -190,9 +203,6 @@ nav ul li a {
 }
 
 .versus img {
-  width: 100%;
-  height: auto;
-  max-width: 100px;
   display: none;
 }
 
@@ -207,14 +217,13 @@ nav ul li a {
 }
 
 .sonic,
-.versus,
 .eggman {
   padding: 0.5rem;
 }
 
 .soundtrack-title {
   width: 100%;
-  padding: 0.5rem;
+  padding: 1rem;
 }
 
 .soundtrack {
@@ -255,6 +264,11 @@ nav ul li a {
 .contact-form {
   width: 100%;
   padding: 0 2rem;
+  max-width: 500px;
+}
+
+.contact-form form label {
+  text-align: left;
 }
 
 .contact-form form input {
@@ -265,6 +279,11 @@ nav ul li a {
 .contact-form textarea {
   width: 100%;
   min-height: 10vh;
+  margin-top: 1rem;
+}
+
+.send-button {
+  max-width: 20%;
 }
 
 .site-footer {
@@ -280,54 +299,64 @@ nav ul li a {
   width: 100%;
 }
 
-.text-position2 {
+.site-footer form {
   width: 100%;
 }
 
-.site-footer form {
-  width: 100%;
+@keyframes blinking {
+  0% {
+    color: blue;
+  }
+  50% {
+    color: white;
+  }
+  100% {
+    color: blue;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   body {
     margin: 1rem;
+    background-color: yellow;
   }
 
-  #menuList {
-    overflow: visible;
+  nav ul {
+    top: 14rem;
+  }
+
+  nav ul li a:hover {
+    color: blue;
+  }
+
+  .menulist {
+    display: block;
   }
 
   .menu-icon {
     display: none;
   }
 
-  .about-container{
+  .about-container {
     padding: 2rem 0;
   }
 
-  .about-left{
-    width: 30%;
-    
-  }
-  .about-right{
-    width: 30%;
+  .about,
+  .about-left,
+  .about-right {
+    flex: 1;
   }
 
-  .about{
-    width: 40%;
-    
-  }
-
-  .about img{
+  .about img {
     max-width: 200px;
   }
 
-  .process-container{
+  .process-container {
     padding: 2rem 1rem;
   }
 
-  .process{
+  .process {
     padding: 2rem 0;
   }
 
@@ -340,28 +369,43 @@ nav ul li a {
 
   .content1 {
     width: 50%;
-    
+    padding: 0 5rem;
   }
   .content2 {
     width: 50%;
   }
 
   .sonic {
-    width: 40%;
+    width: 35%;
+  }
+
+  .sonic img{
+    max-width: 200px;
   }
 
   .versus {
-    width: 20%;
-    align-self: center;
+    width: 30%;
   }
 
   .versus img {
-    max-width: 200px;
     display: block;
+    width: 100%;
+    height: auto;
+    max-height: 250px;
   }
 
   .eggman {
-    width: 40%;
+    width: 35%;
+  }
+
+  .eggman img{
+    max-width: 215px;
+  }
+
+  .sonic,
+  .versus,
+  .eggman {
+    padding: 0.5rem;
   }
 
   .soundtrack1,
@@ -378,8 +422,11 @@ nav ul li a {
   }
 
   .contact-form {
-    max-width: 50rem;
-    justify-content: center;
+    max-width: 500px;
+  }
+
+  .contact-form textarea {
+    max-height: 30vh;
   }
 }
 
@@ -388,14 +435,6 @@ nav ul li a {
   body {
     margin: 3rem;
     background-color: blue;
-  }
-
-  nav ul {
-    top: 14rem;
-  }
-
-  nav ul li a:hover {
-    color: blue;
   }
 
   .soundtrack1,
@@ -412,35 +451,17 @@ nav ul li a {
     width: 33%;
   }
 
-  .about img{
+  .about img {
     max-width: 200px;
   }
 
-  .sonic {
-    width: 40%;
-  }
 
-  .versus {
-    width: 20%;
-    align-self: center;
-  }
-
-  .versus img {
-    max-width: 200px;
-  }
-
-  .eggman {
-    width: 40%;
-  }
 
   .contact-form {
-    max-width: 50%;
-
-    justify-content: center;
+    max-width: 600px;
   }
 
   .contact-form textarea {
-    width: 100%;
     min-height: 30vh;
   }
 }
