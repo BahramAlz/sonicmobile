@@ -268,7 +268,8 @@ nav ul li a {
 }
 
 .contact-form form label {
-  text-align: left;
+  display: flex;
+  width: 100%;
 }
 
 .contact-form form input {
@@ -278,7 +279,7 @@ nav ul li a {
 
 .contact-form textarea {
   width: 100%;
-  min-height: 10vh;
+  min-height: 20vh;
   margin-top: 1rem;
 }
 
@@ -301,6 +302,10 @@ nav ul li a {
 
 .site-footer form {
   width: 100%;
+}
+
+.site-footer form input{
+  padding: 0.3rem 0.3rem;
 }
 
 @keyframes blinking {
@@ -379,26 +384,29 @@ nav ul li a {
     width: 35%;
   }
 
-  .sonic img{
+  .sonic img {
     max-width: 200px;
   }
 
   .versus {
     width: 30%;
+    display: flex;
+    justify-content: center;
   }
 
   .versus img {
     display: block;
     width: 100%;
     height: auto;
-    max-height: 250px;
+    max-width: 200px;
+    max-height: 230px;
   }
 
   .eggman {
     width: 35%;
   }
 
-  .eggman img{
+  .eggman img {
     max-width: 215px;
   }
 
@@ -426,7 +434,7 @@ nav ul li a {
   }
 
   .contact-form textarea {
-    max-height: 30vh;
+    min-height: 30vh;
   }
 }
 
@@ -454,8 +462,6 @@ nav ul li a {
   .about img {
     max-width: 200px;
   }
-
-
 
   .contact-form {
     max-width: 600px;
