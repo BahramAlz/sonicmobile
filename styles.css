@@ -34,7 +34,7 @@ header {
 .menu-icon {
   width: 100%;
   height: auto;
-  max-width: 20px;
+  max-width: 30px;
 }
 
 .menulist {
@@ -48,6 +48,7 @@ header {
 nav ul {
   width: 100%;
   color: whitesmoke;
+  background-color: blue;
   position: absolute;
   top: 3rem;
 }
@@ -328,7 +329,8 @@ nav ul li a {
   }
 
   nav ul {
-    top: 14rem;
+    top: 14.5rem;
+    background: none;
   }
 
   nav ul li a:hover {
