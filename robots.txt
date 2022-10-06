@@ -1,5 +1,8 @@
 User-agent: *
+
 Allow: /
 Allow: *
 Disallow: /
 Disallow: *
+
+Sitemap: https://gleeful-llama-cf58cf.netlify.app/sitemap.xml
